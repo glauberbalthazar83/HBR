@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+</head>
+<body>
+    <form name="calculadora" method="post" action="/calcular">
+        <table border="1">
+            <tr>
+                <td>
+                    <label>Digite o primeiro valor:</label>
+                    <input type="text" name="valor1">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Digite o operador:</label>
+                    <input type="text" name="operador">
+                </td> 
+            </tr>
+            <tr>           
+                <td>
+                    <label>Digite o segundo valor:</label>
+                    <input type="text" name="valor2">
+                </td>                
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Calcular" style="width: 100%;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Resultado:</label>
+                    <input type="text" name="resultado" value={{resultado}}>
+                </td>
+            </tr>            
+        </table>
+    </form>
+</body>
+</html>
